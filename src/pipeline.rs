@@ -32,7 +32,7 @@ pub async fn setup() -> anyhow::Result<()> {
         })
         .await
         .unwrap();
-    let shader = device.create_shader_module(wgpu::include_wgsl!("test.wgsl"));
+    let shader = device.create_shader_module(wgpu::include_wgsl!("edge.wgsl"));
     let mut encoder = device.create_command_encoder(&wgpu::CommandEncoderDescriptor {
         label: Some("encoder"),
     });

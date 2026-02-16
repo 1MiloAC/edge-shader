@@ -3,8 +3,8 @@ use pollster::FutureExt as _;
 use std::error::Error;
 use wgpu::{self, util::BufferInitDescriptor};
 
+pub mod pipeline;
 pub mod resize;
-pub mod sample_mod;
 
 pub struct State {
     adapter: wgpu::Adapter,
